@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1095203145542",
+    "project_id": "simplelogin-cc829",
+    "storage_bucket": "simplelogin-cc829.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095203145542:android:78c71e8801273bf40a0747",
+        "android_client_info": {
+          "package_name": "com.example.simple_scanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095203145542-2612hgm0eq06ct51bfis64njt4ctflgv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.simple_scanner",
+            "certificate_hash": "3c24ccfac9ee67d18fe44e635bfb629f6bf8b3dd"
+          }
+        },
+        {
+          "client_id": "1095203145542-ikie61p1ibom58k2kt2salcufgkvglva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaNpbBR_F8ORJ1JCgc3LCFMBtvfCn2wVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095203145542-ikie61p1ibom58k2kt2salcufgkvglva.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1095203145542-mq07stpapsi4us1a4srumbjahkm3h612.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.simpleScanner"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
