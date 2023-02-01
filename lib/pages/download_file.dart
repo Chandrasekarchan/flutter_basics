@@ -35,11 +35,12 @@ class _FileDownloaderState extends State<FileDownloader> {
             print("count: $count , total: $total");
             int percentage = ((count / total) * 100).floor();
             _progress.value = percentage.toDouble();
+
           }).then((value){
             Navigator.pop(context);
             final bytes = value.data;
             saveFile(url, bytes).then((value){
-              OpenFilex.open(value.path);
+            //  OpenFilex.open(value.path);
             });
           });
 
@@ -56,14 +57,17 @@ class _FileDownloaderState extends State<FileDownloader> {
           return SizedBox(
             height: 50,
             width: 50,
-            child: ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-                child: ValueListenableBuilder(
-                  valueListenable: _progress,
-                  builder: (BuildContext context, double value, Widget? child) {
-                    return LinearProgressIndicator(minHeight: 15,value: _progress.value,);
-                  },
-                )),
+            child: Center(
+              child: ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  child: ValueListenableBuilder(
+                    valueListenable: _progress,
+                    builder: (BuildContext context, double value, Widget? child) {
+                      print("progressValue: ${value}");
+                      return LinearProgressIndicator(minHeight: 15,value: value,backgroundColor: Colors.grey,valueColor: AlwaysStoppedAnimation<Color>(Colors.red),);
+                    },
+                  )),
+            ),
           );
         });
   }

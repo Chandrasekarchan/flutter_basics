@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:isar/isar.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:simple_scanner/model/qr_model.dart';
+import 'package:simple_scanner/mvc/view.dart';
 import 'package:simple_scanner/pages/download_file.dart';
 import 'package:simple_scanner/pages/home_page.dart';
 import 'package:simple_scanner/pages/login/login_page.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const FileDownloader(),
+          home: const MvcView(),
         );
 
       }),
